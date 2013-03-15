@@ -1,0 +1,9 @@
+default: &defaults
+  airsdk: "/Applications/Adobe Flash Builder 4.6/sdks/4.6.0"
+  iossdk: iphoneos6.1
+
+debug:
+  <<: *defaults
+
+release:
+  <<: *defaults
