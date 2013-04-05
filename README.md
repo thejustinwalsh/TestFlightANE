@@ -20,7 +20,7 @@ Call `TestFlight.takeOff("app_id")` with your application token to initialize Te
 I am not certain if Apple will approve your ANE using this SDK with the included deprecated `[[UIDevice currentDevice] uniqueIdentifier]]` call. If you would like to use this TestFlight ANE in an App Store build, it is advised that you comment out the code in `TestFlight.m` that uses the deprecated function call.
 
 ## License
-ServerSocket is license under a permissive MIT source license. Fork well my friends.
+TestFlightANE is license under a permissive MIT source license. Fork well my friends.
 
 	Copyright (c) 2012 Justin Walsh, http://thejustinwalsh.com/
 
