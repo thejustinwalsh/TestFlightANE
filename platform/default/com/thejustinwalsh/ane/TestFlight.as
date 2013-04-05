@@ -25,7 +25,7 @@ package com.thejustinwalsh.ane
 {
 	public class TestFlight
 	{
-		public function isSupported():Boolean { return false; }
+		public static function isSupported():Boolean { return false; }
 		
 		public static function takeOff(applicationToken:String):Boolean
 		{

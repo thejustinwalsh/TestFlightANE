@@ -31,7 +31,7 @@ package com.thejustinwalsh.ane
 	{
 		private static var extCtx:ExtensionContext;
 
-		public function isSupported():Boolean { return true; }
+		public static function isSupported():Boolean { return true; }
 		
 		public static function takeOff(applicationToken:String):Boolean
 		{

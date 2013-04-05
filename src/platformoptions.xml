@@ -22,11 +22,11 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
 
 <platform xmlns="http://ns.adobe.com/air/extension/3.1"> 
-    <description >ServerSocket native implementation for iOS</description> 
+    <description >TestFlight SDK</description> 
     <copyright>2012 Justin Walsh</copyright> 
-    <sdkVersion>5.0</sdkVersion> 
-    <linkerOptions> 
-    	<option>-ios_version_min 5.0</option>
+    <linkerOptions>
+        <option>-framework Foundation</option>
+        <option>-framework UIKit</option>
         <option>-lz</option>
     </linkerOptions> 
 </platform>
