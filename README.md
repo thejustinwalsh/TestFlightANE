@@ -14,7 +14,7 @@ After editing your `config/build.yml` file, simply type `rake build` again.  If 
 ## Usage
 The api is a single class called TestFlight in the `com.thejustinwalsh.ane` package. The class consists entirely of static methods that wrap the TestFlight SDK.
 
-Call `TestFlight.takeOff("app_id")` with your application token to initialize TestFlight. If this is a debug build you may want to call `TestFlght.setDeviceIdentifier()` before calling `TestFlight.takeOff` so that your sessions are bound to the proper user.
+Call `TestFlight.takeOff("app_id")` with your application token to initialize TestFlight. If this is a debug build you may want to call `TestFlight.setDeviceIdentifier()` before calling `TestFlight.takeOff` so that your sessions are bound to the proper user.
 
 ## Considerations
 I am not certain if Apple will approve your ANE using this SDK with the included deprecated `[[UIDevice currentDevice] uniqueIdentifier]]` call. If you would like to use this TestFlight ANE in an App Store build, it is advised that you comment out the code in `TestFlight.m` that uses the deprecated function call.
