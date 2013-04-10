@@ -32,40 +32,46 @@ package com.thejustinwalsh.ane
 		private static var extCtx:ExtensionContext;
 
 		public static function isSupported():Boolean { return true; }
+
+		private static function get context():ExtensionContext
+		{
+			if (!extCtx) extCtx = ExtensionContext.createExtensionContext("com.thejustinwalsh.TestFlight", null);
+			return extCtx;
+		}
 		
 		public static function takeOff(applicationToken:String):Boolean
 		{
-			if (!extCtx) extCtx = ExtensionContext.createExtensionContext("com.thejustinwalsh.TestFlight", null);
+			if (!context) return false;
 			return extCtx.call("takeOff", applicationToken);
 		}
 
 		public static function setDeviceIdentifier():void
 		{
-			if (!extCtx) return;
+			if (!context) return;
 			extCtx.call("setDeviceIdentifier");	
 		}
 		
 		public static function setOptions(reinstallCrashHandlers:Boolean, logToConsole:Boolean = true, logToSTDERR:Boolean = true, sendLogOnlyOnCrash:Boolean = false, attachBacktraceToFeedback:Boolean = false, disableInAppUpdates:Boolean = false):void
 		{
-			if (!extCtx) return;
+			if (!context) return;
 			extCtx.call("setOptions", reinstallCrashHandlers, logToConsole, logToSTDERR, sendLogOnlyOnCrash);
 		}
 		
 		public static function passCheckpoint(checkpointName:String):void
 		{
-			if (!extCtx) return;
+			if (!context) return;
 			extCtx.call("passCheckpoint", checkpointName);
 		}
 		
 		public static function submitFeedback(feedback:String):void
 		{
-			if (!extCtx) return;
+			if (!context) return;
 			extCtx.call("submitFeedback", feedback);
 		}
 		
 		public static function openFeedbackView():void
 		{
-			if (!extCtx) return;
+			if (!context) return;
 			extCtx.call("openFeedbackView");
 		}
 		
@@ -79,7 +85,7 @@ package com.thejustinwalsh.ane
 				message += args[i].toString();
 			}
 
-			if (!!extCtx) extCtx.call("log", message);
+			if (!!context) extCtx.call("log", message);
 			trace(message);
 		}
 	}
