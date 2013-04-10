@@ -58,7 +58,7 @@ task :build, [:config] => [:load, :ios, :swc, :default_swc] do |t, args|
 	swf_dir = "#{ROOT}/bin/#{PROJECT}"
 	default_swf_dir = "#{ROOT}/bin/default/#{PROJECT}"
 	ios_platform_options = "#{ROOT}/src/platformoptions.xml"
-	ios_lib_dir = "#{ROOT}/platform/ios/build/#{$config.capitalize}-iphoneos/"
+	ios_lib_dir = "#{ROOT}/platform/ios/bin/"
 	ios_lib = "libTestFlight.a"
 
 	# Run adt and package our ane
