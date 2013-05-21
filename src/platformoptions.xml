@@ -27,6 +27,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     <linkerOptions>
         <option>-framework Foundation</option>
         <option>-framework UIKit</option>
+        <option>-weak_framework AdSupport.framework</option>
         <option>-lz</option>
     </linkerOptions> 
 </platform>

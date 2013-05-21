@@ -57,7 +57,7 @@ package com.thejustinwalsh.ane
 			
 		}
 		
-		public static function log(message:String, ... args):void
+		public static function log(...args):void
 		{
 			var message:String = "";
 			if (args.length > 0 && args[0] is Array) args = args[0];

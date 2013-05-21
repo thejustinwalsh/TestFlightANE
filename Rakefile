@@ -81,12 +81,12 @@ task :swc, [:config] => [:load] do |t, args|
 
 	# Remove the swc output directory, then build the swc into a directory
 	rm_rf library_dir if File.directory? library_dir
-	sh "#{compc} -directory=true -output=#{library_dir} -debug=#{debug} -define=#{debug_define} +flexlib #{flexlib} +configname=air -source-path+=#{src} -include-sources #{src}" do |ok, res|
+	sh "#{compc} -swf-version=14 -directory=true -output=#{library_dir} -debug=#{debug} -define=#{debug_define} +flexlib #{flexlib} +configname=air -source-path+=#{src} -include-sources #{src}" do |ok, res|
 		fail "## compc failed with exitstatus #{res.exitstatus}" if !ok
 	end
 
 	# Build the swc
-	sh "#{compc} -output=#{library} -debug=#{debug} -define=#{debug_define} +flexlib #{flexlib} +configname=air -source-path+=#{src} -include-sources #{src}" do |ok, res|
+	sh "#{compc} -swf-version=14 -output=#{library} -debug=#{debug} -define=#{debug_define} +flexlib #{flexlib} +configname=air -source-path+=#{src} -include-sources #{src}" do |ok, res|
 		fail "## compc failed with exitstatus #{res.exitstatus}" if !ok
 	end
 end
@@ -105,12 +105,12 @@ task :default_swc, [:config] => [:load] do |t, args|
 
 	# Remove the swc output directory, then build the swc into a directory
 	rm_rf library_dir if File.directory? library_dir
-	sh "#{compc} -directory=true -output=#{library_dir} -debug=#{debug} -define=#{debug_define} +flexlib #{flexlib} +configname=air -source-path+=#{src} -include-sources #{src}" do |ok, res|
+	sh "#{compc} -swf-version=14 -directory=true -output=#{library_dir} -debug=#{debug} -define=#{debug_define} +flexlib #{flexlib} +configname=air -source-path+=#{src} -include-sources #{src}" do |ok, res|
 		fail "## compc failed with exitstatus #{res.exitstatus}" if !ok
 	end
 
 	# Build the swc
-	sh "#{compc} -output=#{library} -debug=#{debug} -define=#{debug_define} +flexlib #{flexlib} +configname=air -source-path+=#{src} -include-sources #{src}" do |ok, res|
+	sh "#{compc} -swf-version=14 -output=#{library} -debug=#{debug} -define=#{debug_define} +flexlib #{flexlib} +configname=air -source-path+=#{src} -include-sources #{src}" do |ok, res|
 		fail "## compc failed with exitstatus #{res.exitstatus}" if !ok
 	end
 end
