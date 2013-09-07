@@ -52,11 +52,6 @@ package com.thejustinwalsh.ane
 			
 		}
 		
-		public static function openFeedbackView():void
-		{
-			
-		}
-		
 		public static function log(...args):void
 		{
 			var message:String = "";

@@ -192,6 +192,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
+				SHARED_PRECOMPS_DIR = "$(PROJECT_TEMP_DIR)/pch-cache";
 				STRIP_INSTALLED_PRODUCT = NO;
 				USER_HEADER_SEARCH_PATHS = "${AIR_SDK_PATH}/include/";
 				VALID_ARCHS = armv7;
@@ -218,6 +219,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
+				SHARED_PRECOMPS_DIR = "$(PROJECT_TEMP_DIR)/pch-cache";
 				STRIP_INSTALLED_PRODUCT = NO;
 				USER_HEADER_SEARCH_PATHS = "${AIR_SDK_PATH}/include/";
 				VALIDATE_PRODUCT = YES;
@@ -244,6 +246,7 @@
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SHARED_PRECOMPS_DIR = "$(PROJECT_TEMP_DIR)/pch-cache";
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "${AIR_SDK_PATH}/include/ /Applications/Adobe\\ Flash\\ Builder\\ 4.6/sdks/4.6.0/include/";
 				VALID_ARCHS = armv7;
@@ -267,6 +270,7 @@
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SHARED_PRECOMPS_DIR = "$(PROJECT_TEMP_DIR)/pch-cache";
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "${AIR_SDK_PATH}/include/ /Applications/Adobe\\ Flash\\ Builder\\ 4.6/sdks/4.6.0/include/";
 				VALID_ARCHS = armv7;

@@ -69,12 +69,6 @@ package com.thejustinwalsh.ane
 			extCtx.call("submitFeedback", feedback);
 		}
 		
-		public static function openFeedbackView():void
-		{
-			if (!context) return;
-			extCtx.call("openFeedbackView");
-		}
-		
 		public static function log(...args):void
 		{
 			var message:String = "";

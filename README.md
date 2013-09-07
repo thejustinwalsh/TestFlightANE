@@ -19,6 +19,14 @@ Call `TestFlight.takeOff("app_id")` with your application token to initialize Te
 ## Considerations
 I am not certain if Apple will approve your ANE using this SDK with the included deprecated `[[UIDevice currentDevice] uniqueIdentifier]]` call. If you would like to use this TestFlight ANE in an App Store build, it is advised that you comment out the code in `TestFlight.m` that uses the deprecated function call.
 
+## Donating
+Support this project and [others by thejustinwalsh][gittip-thejustinwalsh] via [gittip][gittip-thejustinwalsh].
+
+[![Support via Gittip][gittip-badge]][gittip-thejustinwalsh]
+
+[gittip-badge]: https://rawgithub.com/twolfson/gittip-badge/master/dist/gittip.png
+[gittip-thejustinwalsh]: https://www.gittip.com/thejustinwalsh/
+
 ## License
 TestFlightANE is license under a permissive MIT source license. Fork well my friends.
 

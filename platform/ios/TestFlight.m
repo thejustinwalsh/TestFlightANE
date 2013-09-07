@@ -161,16 +161,6 @@ FREObject TestFlight_PassCheckpoint(FREContext ctx, void* funcData, uint32_t arg
 
 
 //
-// openFeedbackView():void
-//
-FREObject TestFlight_OpenFeedbackView(FREContext ctx, void* funcData, uint32_t argc, FREObject argv[])
-{
-    [TestFlight openFeedbackView];
-    return nil;
-}
-
-
-//
 // submitFeedback(feedback:String):void
 //
 FREObject TestFlight_SubmitFeedback(FREContext ctx, void* funcData, uint32_t argc, FREObject argv[])
@@ -251,10 +241,6 @@ void TestFlight_ContextInitializer(void* extData, const uint8_t* ctxType, FRECon
 	func[3].name = (const uint8_t*)"passCheckpoint";
 	func[3].functionData = NULL;
 	func[3].function = &TestFlight_PassCheckpoint;
-	
-    func[4].name = (const uint8_t*)"openFeedbackView";
-	func[4].functionData = NULL;
-	func[4].function = &TestFlight_OpenFeedbackView;
     
 	func[5].name = (const uint8_t*)"submitFeedback";
 	func[5].functionData = NULL;
