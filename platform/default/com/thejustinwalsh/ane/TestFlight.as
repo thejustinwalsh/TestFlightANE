@@ -26,43 +26,26 @@ package com.thejustinwalsh.ane
 	public class TestFlight
 	{
 		public static function isSupported():Boolean { return false; }
-		
+
 		public static function takeOff(applicationToken:String):Boolean
 		{
 			return false;
 		}
 
-		public static function setDeviceIdentifier():void
-		{
-			
-		}
-		
 		public static function setOptions(reinstallCrashHandlers:Boolean, logToConsole:Boolean = true, logToSTDERR:Boolean = true, sendLogOnlyOnCrash:Boolean = false, attachBacktraceToFeedback:Boolean = false, disableInAppUpdates:Boolean = false):void
 		{
-			
 		}
 		
 		public static function passCheckpoint(checkpointName:String):void
 		{
-			
 		}
 		
 		public static function submitFeedback(feedback:String):void
 		{
-			
 		}
 		
 		public static function log(...args):void
 		{
-			var message:String = "";
-			if (args.length > 0 && args[0] is Array) args = args[0];
-
-			for (var i:int = 0; i < args.length; ++i) {
-				if (i > 0) message += " ";
-				message += args[i].toString();
-			}
-
-			trace(message);
 		}
 	}
 }

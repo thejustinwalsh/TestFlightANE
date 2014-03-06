@@ -109,20 +109,6 @@ FREObject TestFlight_TakeOff(FREContext ctx, void* funcData, uint32_t argc, FREO
 }
 
 //
-// setDeviceIdentifier():void
-//
-FREObject TestFlight_SetDeviceIdentifier(FREContext ctx, void* funcData, uint32_t argc, FREObject argv[])
-{
-    if (inFlight == NO)
-    {
-        [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
-    }
-
-    return nil;
-}
-
-
-//
 // setOptions(reinstallCrashHandlers:Boolean, logToConsole:Boolean, logToSTDERR:Boolean, sendLogOnlyOnCrash:Boolean):void
 //
 FREObject TestFlight_SetOptions(FREContext ctx, void* funcData, uint32_t argc, FREObject argv[])
@@ -221,7 +207,7 @@ FREObject TestFlight_Log(FREContext ctx, void* funcData, uint32_t argc, FREObjec
 //
 void TestFlight_ContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, uint32_t* numFunctionsToTest, const FRENamedFunction** functionsToSet)
 {
-    #define BOUND_FUNCTION_COUNT 8
+    #define BOUND_FUNCTION_COUNT 7
     
 	*numFunctionsToTest = BOUND_FUNCTION_COUNT;
 	FRENamedFunction* func = (FRENamedFunction*)malloc(sizeof(FRENamedFunction) * BOUND_FUNCTION_COUNT);
@@ -250,10 +236,6 @@ void TestFlight_ContextInitializer(void* extData, const uint8_t* ctxType, FRECon
 	func[6].functionData = NULL;
 	func[6].function = &TestFlight_Log;
 
-    func[7].name = (const uint8_t*)"setDeviceIdentifier";
-    func[7].functionData = NULL;
-    func[7].function = &TestFlight_SetDeviceIdentifier;
-    
 	*functionsToSet = func;
     
     if (logger == nil) logger = [[[Logger alloc] init] retain];

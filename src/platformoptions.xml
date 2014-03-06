@@ -21,7 +21,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
 
-<platform xmlns="http://ns.adobe.com/air/extension/3.1"> 
+<platform xmlns="http://ns.adobe.com/air/extension/3.1">
     <description >TestFlight SDK</description> 
     <copyright>2012 Justin Walsh</copyright> 
     <linkerOptions>

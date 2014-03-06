@@ -45,12 +45,6 @@ package com.thejustinwalsh.ane
 			return extCtx.call("takeOff", applicationToken);
 		}
 
-		public static function setDeviceIdentifier():void
-		{
-			if (!context) return;
-			extCtx.call("setDeviceIdentifier");	
-		}
-		
 		public static function setOptions(reinstallCrashHandlers:Boolean, logToConsole:Boolean = true, logToSTDERR:Boolean = true, sendLogOnlyOnCrash:Boolean = false, attachBacktraceToFeedback:Boolean = false, disableInAppUpdates:Boolean = false):void
 		{
 			if (!context) return;
@@ -80,7 +74,6 @@ package com.thejustinwalsh.ane
 			}
 
 			if (!!context) extCtx.call("log", message);
-			trace(message);
 		}
 	}
 }
