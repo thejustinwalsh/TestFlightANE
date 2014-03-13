@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		000C5CEA14FFE2060050AD58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000C5CE914FFE2060050AD58 /* Foundation.framework */; };
-		0055ACE114FFE24E00BC5BD8 /* TestFlight-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 0055ACDE14FFE24E00BC5BD8 /* TestFlight-Prefix.pch */; };
-		0055ACE214FFE24E00BC5BD8 /* TestFlight.h in Headers */ = {isa = PBXBuildFile; fileRef = 0055ACDF14FFE24E00BC5BD8 /* TestFlight.h */; };
-		0055ACE314FFE24E00BC5BD8 /* TestFlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 0055ACE014FFE24E00BC5BD8 /* TestFlight.m */; };
-		0055ACE514FFE26300BC5BD8 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0055ACE414FFE26300BC5BD8 /* libTestFlight.a */; };
 		00C0DA2514FFE46800D57618 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C0DA2414FFE46800D57618 /* libz.dylib */; };
 		00F07CC714FFF3160007F5EE /* libTestFlight.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 000C5CE614FFE2060050AD58 /* libTestFlight.a */; };
 		5CD2FABC174C0FDE00E65372 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD2FABA174C0FBF00E65372 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5CFF26C6170E7D2500788AAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CFF26C4170E7D0A00788AAD /* UIKit.framework */; };
+		DE62925CE76531C65510FB41 /* TestFlight-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = DE629337E176E6E89A16CA07 /* TestFlight-Prefix.pch */; };
+		DE6294EE4C6F494EDCFAF5F2 /* TestFlight.m in Sources */ = {isa = PBXBuildFile; fileRef = DE629B5723A01677EE167D8B /* TestFlight.m */; };
+		DE62952C20A29EE4BFAB2693 /* TestFlight+ManualSessions.h in Headers */ = {isa = PBXBuildFile; fileRef = DE629E2F7F91FAC00A561924 /* TestFlight+ManualSessions.h */; };
+		DE62953CBE8FA13513A57C0F /* TestFlight+AsyncLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = DE629646F097D7FD8ACB9A94 /* TestFlight+AsyncLogging.h */; };
+		DE629C430FA33DBD7BF64369 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6293CF6251A834C03A0340 /* libTestFlight.a */; };
+		DE629DBB9F659F598FC0B2EF /* TestFlight.h in Headers */ = {isa = PBXBuildFile; fileRef = DE62905D18C7BA4F46CEBB53 /* TestFlight.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,13 +36,15 @@
 /* Begin PBXFileReference section */
 		000C5CE614FFE2060050AD58 /* libTestFlight.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTestFlight.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		000C5CE914FFE2060050AD58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		0055ACDE14FFE24E00BC5BD8 /* TestFlight-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight-Prefix.pch"; sourceTree = SOURCE_ROOT; };
-		0055ACDF14FFE24E00BC5BD8 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = SOURCE_ROOT; };
-		0055ACE014FFE24E00BC5BD8 /* TestFlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFlight.m; sourceTree = SOURCE_ROOT; };
-		0055ACE414FFE26300BC5BD8 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		00C0DA2414FFE46800D57618 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		5CD2FABA174C0FBF00E65372 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		5CFF26C4170E7D0A00788AAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DE62905D18C7BA4F46CEBB53 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		DE629337E176E6E89A16CA07 /* TestFlight-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight-Prefix.pch"; sourceTree = "<group>"; };
+		DE6293CF6251A834C03A0340 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		DE629646F097D7FD8ACB9A94 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		DE629B5723A01677EE167D8B /* TestFlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFlight.m; sourceTree = "<group>"; };
+		DE629E2F7F91FAC00A561924 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,10 +53,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				00C0DA2514FFE46800D57618 /* libz.dylib in Frameworks */,
-				0055ACE514FFE26300BC5BD8 /* libTestFlight.a in Frameworks */,
 				5CD2FABC174C0FDE00E65372 /* AdSupport.framework in Frameworks */,
 				5CFF26C6170E7D2500788AAD /* UIKit.framework in Frameworks */,
 				000C5CEA14FFE2060050AD58 /* Foundation.framework in Frameworks */,
+				DE629C430FA33DBD7BF64369 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,9 +66,9 @@
 		000C5CDB14FFE2060050AD58 = {
 			isa = PBXGroup;
 			children = (
-				000C5CEB14FFE2060050AD58 /* TestFlight */,
 				000C5CE814FFE2060050AD58 /* Frameworks */,
 				000C5CE714FFE2060050AD58 /* Products */,
+				DE62960DA5DC78FE2EE1C367 /* TestFlight */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,22 +84,24 @@
 			isa = PBXGroup;
 			children = (
 				00C0DA2414FFE46800D57618 /* libz.dylib */,
-				0055ACE414FFE26300BC5BD8 /* libTestFlight.a */,
 				5CD2FABA174C0FBF00E65372 /* AdSupport.framework */,
 				5CFF26C4170E7D0A00788AAD /* UIKit.framework */,
 				000C5CE914FFE2060050AD58 /* Foundation.framework */,
+				DE6293CF6251A834C03A0340 /* libTestFlight.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		000C5CEB14FFE2060050AD58 /* TestFlight */ = {
+		DE62960DA5DC78FE2EE1C367 /* TestFlight */ = {
 			isa = PBXGroup;
 			children = (
-				0055ACDE14FFE24E00BC5BD8 /* TestFlight-Prefix.pch */,
-				0055ACDF14FFE24E00BC5BD8 /* TestFlight.h */,
-				0055ACE014FFE24E00BC5BD8 /* TestFlight.m */,
+				DE629646F097D7FD8ACB9A94 /* TestFlight+AsyncLogging.h */,
+				DE629E2F7F91FAC00A561924 /* TestFlight+ManualSessions.h */,
+				DE62905D18C7BA4F46CEBB53 /* TestFlight.h */,
+				DE629B5723A01677EE167D8B /* TestFlight.m */,
+				DE629337E176E6E89A16CA07 /* TestFlight-Prefix.pch */,
 			);
-			path = TestFlight;
+			name = TestFlight;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,8 +111,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0055ACE114FFE24E00BC5BD8 /* TestFlight-Prefix.pch in Headers */,
-				0055ACE214FFE24E00BC5BD8 /* TestFlight.h in Headers */,
+				DE62953CBE8FA13513A57C0F /* TestFlight+AsyncLogging.h in Headers */,
+				DE62952C20A29EE4BFAB2693 /* TestFlight+ManualSessions.h in Headers */,
+				DE629DBB9F659F598FC0B2EF /* TestFlight.h in Headers */,
+				DE62925CE76531C65510FB41 /* TestFlight-Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0055ACE314FFE24E00BC5BD8 /* TestFlight.m in Sources */,
+				DE6294EE4C6F494EDCFAF5F2 /* TestFlight.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +250,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"${PROJECT_DIR}/\"/**",
 				);
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -266,6 +275,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"${PROJECT_DIR}/\"/**",
 				);
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				OTHER_LDFLAGS = "-ObjC";
