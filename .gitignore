@@ -31,3 +31,5 @@ profile
 DerivedData
 .idea/
 *.hmap
+
+platform/ios/FlashRuntimeExtensions.h
