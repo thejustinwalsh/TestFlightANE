@@ -35,11 +35,6 @@ package com.thejustinwalsh.ane
             return false;
         }
 
-        public static function setDeviceIdentifier():void
-        {
-
-        }
-
         public static function setOptions(reinstallCrashHandlers:Boolean, logToConsole:Boolean = true, logToSTDERR:Boolean = true, sendLogOnlyOnCrash:Boolean = false, attachBacktraceToFeedback:Boolean = false, disableInAppUpdates:Boolean = false):void
         {
 
