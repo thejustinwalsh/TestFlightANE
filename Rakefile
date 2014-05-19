@@ -1,5 +1,5 @@
 # Copyright (c) 2012 Justin Walsh, http://thejustinwalsh.com/
-# 
+#
 # Permission is hereby granted, free of charge, to any person obtaining
 # a copy of this software and associated documentation files (the
 # "Software"), to deal in the Software without restriction, including
@@ -7,10 +7,10 @@
 # distribute, sublicense, and/or sell copies of the Software, and to
 # permit persons to whom the Software is furnished to do so, subject to
 # the following conditions:
-# 
+#
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
-# 
+#
 # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
 # EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
 # MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
@@ -64,7 +64,7 @@ task :build, [:config] => [:load, :ios, :swc, :default_swc] do |t, args|
 	# Run adt and package our ane
 	sh "#{adt} -package -target ane #{ane} #{xml} -swc #{swc} -platform iPhone-ARM -C #{swf_dir} library.swf -C #{ios_lib_dir} #{ios_lib} -platformoptions #{ios_platform_options} -platform default -C #{default_swf_dir} library.swf" do |ok, res|
 		fail "## adt failed with exitstatus #{res.exitstatus}" if !ok
-	end	
+	end
 end
 
 desc "Build the swc and library.swf files needed for ane packaging"
@@ -78,6 +78,9 @@ task :swc, [:config] => [:load] do |t, args|
 	library = "#{output_dir}/#{PROJECT}.swc"
 	library_dir = "#{output_dir}/#{PROJECT}"
 	src = "#{ROOT}/src"
+
+	# ensure our output directory exists
+	mkdir_p output_dir
 
 	# Remove the swc output directory, then build the swc into a directory
 	rm_rf library_dir if File.directory? library_dir
@@ -102,6 +105,9 @@ task :default_swc, [:config] => [:load] do |t, args|
 	library = "#{output_dir}/#{PROJECT}.swc"
 	library_dir = "#{output_dir}/#{PROJECT}"
 	src = "#{ROOT}/platform/default"
+
+	# ensure our output directory exists
+	mkdir_p output_dir
 
 	# Remove the swc output directory, then build the swc into a directory
 	rm_rf library_dir if File.directory? library_dir
